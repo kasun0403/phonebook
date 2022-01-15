@@ -83,21 +83,25 @@ class _HomePageState extends State<HomePage> {
                                 SizedBox(
                                   width: size.width * 0.05,
                                 ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      contacts.name,
-                                      style: homeBodyText,
-                                    ),
-                                    Text(
-                                      contacts.phoneNumber,
-                                      style: homeBodyText,
-                                    ),
-                                  ],
+                                Container(
+                                  width: size.width / 3,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        contacts.name,
+                                        style: homeBodyText,
+                                      ),
+                                      Text(
+                                        contacts.phoneNumber,
+                                        style: homeBodyText,
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 SizedBox(
-                                  width: size.width / 5,
+                                  width: size.width / 8,
                                 ),
                                 IconButton(
                                     onPressed: () {

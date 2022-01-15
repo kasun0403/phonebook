@@ -149,13 +149,20 @@ class _AddUserPageState extends State<AddUserPage> {
   }
 
   validateData() {
-    if (nameController.text.isNotEmpty && phoneNoController.text.isNotEmpty) {
-    } else if (nameController.text.isEmpty || phoneNoController.text.isEmpty) {
+    if (nameController.text.isEmpty || phoneNoController.text.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           backgroundColor: black,
           content: Text(
             'Add All Data',
           )));
-    }
+    } else if (!phoneNoController.text
+        .contains(RegExp(r'(^(?:[+0]94)?[0-9]{10}$)'))) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          backgroundColor: black,
+          content: Text(
+            'Check Mobile Number',
+          )));
+    } else if (nameController.text.isNotEmpty &&
+        phoneNoController.text.isNotEmpty) {}
   }
 }
