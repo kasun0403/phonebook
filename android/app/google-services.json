@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "797065823862",
+    "project_id": "phone-book-4575c",
+    "storage_bucket": "phone-book-4575c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797065823862:android:52cebb04fbbd493dcac157",
+        "android_client_info": {
+          "package_name": "com.dilshan.phonebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797065823862-ej4oa81qnrrhj9pnhi8fgu217isslvu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_xmC1Ti1YVzKS5uFEjsi0zBthx7P73f8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797065823862-ej4oa81qnrrhj9pnhi8fgu217isslvu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
